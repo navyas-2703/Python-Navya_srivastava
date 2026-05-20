@@ -29,3 +29,42 @@ print(is_palindrome("racecar"))              # Output: True
 print(count_vowels("Hello World"))           # Output: 3
 print(is_anagram("listen", "silent"))        # Output: True
 print(most_frequent_char("programming"))     # Output: g
+
+
+
+
+# 6. Count words in a string
+def count_words(s):
+    return len(s.split())
+
+# 7. Remove duplicates from string
+def remove_duplicates(s):
+    seen = set()
+    result = ""
+    for char in s:
+        if char not in seen:
+            seen.add(char)
+            result += char
+    return result
+
+# 8. Check if string is rotation of another
+def is_rotation(s1, s2):
+    if len(s1) != len(s2):
+        return False
+    return s2 in s1 + s1
+
+# 9. Capitalize first letter of each word
+def capitalize_words(s):
+    return s.title()
+
+# 10. Find longest word in a sentence
+def longest_word(s):
+    words = s.split()
+    return max(words, key=len)
+
+# Testing
+print(count_words("Hello World how are you"))        #  5
+print(remove_duplicates("programming"))              #  progamin
+print(is_rotation("abcde", "cdeab"))                 #  True
+print(capitalize_words("hello world"))               #  Hello World
+print(longest_word("I love programming in python"))  #  programming
