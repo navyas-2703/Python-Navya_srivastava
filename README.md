@@ -1,5 +1,5 @@
 # Python-Navya_srivastava
-# 🐍 Python Placement Preparation
+# 🐍 Python  Preparation
 
 A structured collection of Python programs and solutions.
 ---
